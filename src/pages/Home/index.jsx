@@ -1,15 +1,19 @@
 import React from "react";
+// import { useState } from "react";
+import Gallery from "../../components/Gallery";
+import Banner from "../../components/Banner";
+import Header from "../../components/Header";
+import Footer from "../../components/Footer";
 
 export default function Home() {
   return (
-    <main>
-      <div className="banner-home">
-        <img src="../../../assets/banner-home.png" alt="home page banner" />
-        <p> Banner</p>
-      </div>
-      <div>
-        <p> Main</p>
-      </div>
-    </main>
+    <>
+      <Header />
+      <main className="main">
+        <Banner />
+        <Gallery />
+      </main>
+      <Footer />
+    </>
   );
 }

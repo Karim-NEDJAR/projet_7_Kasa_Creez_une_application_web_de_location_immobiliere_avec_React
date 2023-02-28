@@ -1,12 +1,13 @@
 import React from "react";
 import Navigation from "../Navigation";
-import "../../style/error.css";
+import Logo from "../Logo";
+// import "../../style/header.css";
 
 export default function Header() {
   return (
-    <div className="header">
-      <img src="../../assets/LOGO.svg" alt="logo kasa"></img>
+    <header className="header">
+      <Logo />
       <Navigation />
-    </div>
+    </header>
   );
 }

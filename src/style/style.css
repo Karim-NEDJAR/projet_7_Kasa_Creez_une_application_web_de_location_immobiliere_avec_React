@@ -1,7 +1,18 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 @import './header.css';
 @import './footer.css';
 @import './navigation.css';
 @import './home.css';
 @import './about.css';
 @import './error.css';
+@import './body.css';
+@import './card.css';
+@import './global.css';
+@import './section.css';
+@import './main.css';
+@import './logo.css';
+@import './banner.css';
+@import './main.css';
+@import './gallery.css';
 

@@ -1,13 +1,13 @@
 import React from "react";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
-export default function Error() {
+// import Card from "../../components/Card";
+
+export default function Logement() {
   return (
     <>
       <Header />
-      <div className="error">
-        <h1>Erreur 404</h1>
-      </div>
+      <h1>page logement</h1>
       <Footer />
     </>
   );
