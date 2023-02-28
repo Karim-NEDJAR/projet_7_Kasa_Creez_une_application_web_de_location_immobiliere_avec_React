@@ -20,7 +20,7 @@ _ Si le Collapse est ouvert, le clic de l'utilisateur permet de le fermer. \* In
 
 ## Contraintes techniques
 
-**S'agissant de React :**
+**\* ** S'agissant de React :\*\*
 Il est impératif d’utiliser ces éléments de React pour un code de qualité :
 
 - Découpage en composants modulaires et réutilisables
@@ -32,15 +32,19 @@ Il est impératif d’utiliser ces éléments de React pour un code de qualité 
   Listes : React permet de faire des choses vraiment intéressantes avec les listes, en itérant dessus, par exemple avec map. Il faut les utiliser
   autant que possible. Il est également recommandé, mais pas imposé, d’utiliser des composants fonctionnels plutôt que des composants classes.
 
-**S'agissant de React Router:**
+** S'agissant de React Router:**
 Les paramètres des routes sont gérés par React Router dans l'URL pour récupérer les informations de chaque logement. Il existe une page par route.
 
-**S'agissant des outils:**
+**\* **S'agissant des outils:\*\*
 
 - Create React App. (https://github.com/facebook/create-react-app)
 - React Router.
 - Styling: L’utilisation de Sass est optionnelle. CSS est à utiliser par défaut.
 - Pas de librairie React externe
+
+---
+
+---
 
 ## Available Scripts
 

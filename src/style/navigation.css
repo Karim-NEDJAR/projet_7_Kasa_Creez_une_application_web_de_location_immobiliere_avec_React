@@ -32,11 +32,15 @@
 } */
 
 
-a:hover,
-a:active,
-a:hover,
+a:hover {
+  text-decoration-line: underline;
+  
+}
+
 a:active {
   text-decoration-line: underline;
-  text-shadow: #ff0000;
+  font-weight: bold;  
+  text-decoration-thickness: 3px ;
 }
+
 
