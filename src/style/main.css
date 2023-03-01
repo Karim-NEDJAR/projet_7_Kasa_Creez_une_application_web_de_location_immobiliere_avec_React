@@ -1,6 +1,5 @@
 .main {
 width: 100%;  /*1240px / 1440;*/
-height: 1095px;
-border: 1px dashed magenta; /*provisoire*/
+height: 1095px;  /*cela engendrera du scrolling*/
 }
 

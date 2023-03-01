@@ -5,15 +5,31 @@ import { Link } from "react-router-dom";
 
 export default function Gallery(props) {
   const { logements } = props;
-  if (logements && logements.length > 0) {
-    return (
-      <section className="gallery">
-        {logements.map((logement, index) => (
-          <Link to={`/logement/:${index}`}>
-            <Card key={logements.id} logement={logement} />
+
+  return (
+    <section className="gallery">
+      {logements &&
+        logements.map((logement) => (
+          <Link to={`/logement/${logement.id}`} key={logement.id}>
+            <Card key={logement.id} logement={logement} />
           </Link>
         ))}
+    </section>
+  );
+
+  /**
+   return (
+    <section className="gallery">
+      {logements && logements.length > 0 ? (
+        logements.map((logement) => (
+          <Link to={`/logement/${logement.id}`}>
+            <Card key={logement.id} logement={logement} />
+          </Link>
+         ))
+      ) : (
+        <h2> Informations non trouvées ... </h2>
+      )} }
       </section>
-    );
-  }
+      );
+ * **/
 }

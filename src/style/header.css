@@ -1,13 +1,11 @@
 .header {
     
     width: 100%;  /* width: 1240px; */
-    min-height: 68px;
+    height: 68px;
     margin-top: 40px;
     display: flex;
     flex-flow: row  wrap;
     justify-content: space-between;
     align-items:center;
-    /* border: 1px dotted darkgreen; */
-
     }
     

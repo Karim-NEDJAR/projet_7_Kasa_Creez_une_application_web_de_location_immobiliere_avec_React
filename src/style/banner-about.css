@@ -1,0 +1,42 @@
+.banner-about {
+/* position: relative; */
+  width: 100% ; /* 1240px;*/
+  height: 223px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 63px;
+  border-radius: 25px;
+  background: #000000;
+  opacity: 0.3;
+  mix-blend-mode: darken;
+}
+
+
+ .banner-about-img-bg {
+    height: 223px;
+    width: 100%;
+    background: #000000;
+    opacity: 0.3;
+    border-radius: 25px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  /* position: absolute; */
+}
+
+.banner-about-img-bg > img {
+  object-fit: cover;
+  width: 100%;
+  /* position: absolute; */
+
+  border-radius: 25px;
+   
+}
+
+/*Media queries TEL & TAB*/
+@media screen and (max-width: 991px) {
+}

@@ -26,22 +26,19 @@ top: 171px;
     
     
     /* Chez vous, partout et ailleurs */
-    .section > h1 {
+    /* .section > h1 {
     position: absolute;
     left: 25.9%;
     right: 25.14%;
     top: 24.32%;
     bottom: 69.04%;
-    
-    font-family: 'Montserrat';
+        font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
     font-size: 48px;
     line-height: 142.6%;
-    /* or 68px */
-    display: flex;
+        display: flex;
     align-items: flex-end;
-    
-    color: #FFFFFF;
+        color: #FFFFFF;
     }
-    
+     */
