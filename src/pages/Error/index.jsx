@@ -1,5 +1,6 @@
 import React from "react";
 import Header from "../../components/Header";
+import { Link } from "react-router-dom";
 export default function Error() {
   return (
     <>
@@ -9,7 +10,9 @@ export default function Error() {
         <h2 className="error-msg">
           Oups! La page que vous demandez n'existe pas.
         </h2>
-        <p className="error-to-home">Retourner sur la page d’accueil</p>
+        <Link to="/" className="error-to-home">
+          Retourner sur la page d’accueil
+        </Link>
       </div>
     </>
   );

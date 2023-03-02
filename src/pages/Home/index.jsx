@@ -10,12 +10,12 @@ export default function Home(props) {
   return (
     <>
       <Header />
-      <main className="main">
+      <main className="main-home">
         <Banner />
         {logements && logements.length > 0 ? (
           <Gallery logements={logements} />
         ) : (
-          <h2>Informations non trouvées ...</h2>
+          <h2>Recherche des informations demandées ...</h2>
         )}
       </main>
       <Footer />
