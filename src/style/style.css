@@ -9,12 +9,13 @@
 @import './body.css';
 @import './card.css';
 @import './global.css';
-/* @import './section.css'; */
 @import './logo.css';
 @import './banner.css';
 @import './banner-about.css';
 @import './main-home.css';
+@import './main-logement.css';
 @import './main-about.css';
 @import './gallery.css';
 @import './collapse.css';
+@import './carrousel.css';
 

@@ -10,10 +10,6 @@ export default function Collapse() {
   const altText = collapsed ? "Masquer" : "Afficher";
   const nothing = "";
 
-  const changeCollapse = () => {
-    setCollapsed(!collapsed);
-  };
-
   return (
     <section className="collapse">
       {offres &&
@@ -22,7 +18,10 @@ export default function Collapse() {
             <article className="offre" key={index}>
               <div className="engagement">
                 <p className="engagement-titre"> {offre.engagement} </p>
-                <div className="up-down" onClick={changeCollapse}>
+                <div
+                  className="up-down"
+                  onClick={() => setCollapsed(!collapsed)}
+                >
                   <img src={fleche} alt={altText} />
                 </div>
               </div>
