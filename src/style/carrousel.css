@@ -52,6 +52,19 @@ img.carrousel-fleche-droite {
   transition: transform 0.3s ease-in-out;
   cursor: pointer;
 }
+/**** COMPTEUR ***/
+.carrousel-compteur{
+  width: 60px;
+  height: 32px;
+  font-size: 18px;
+  font-family: Montserrat;
+  color: white;
+  font-weight: bold;
+  position: absolute;
+  z-index: 3;
+  top: 75%;
+  left: calc(50% - 30px);
+}
 
 /**2ème section : carrousel-infos**/
 /** comporte deux conteneurs alignés horizontalement sur desktop

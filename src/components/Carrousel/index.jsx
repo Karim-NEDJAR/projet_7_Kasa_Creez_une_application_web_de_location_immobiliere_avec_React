@@ -9,7 +9,6 @@ import CarrouselCollapse from "../CarrouselCollapse";
 
 export default function Carrousel({ currentHouse }) {
   const [CurrentIndex, setCurrentIndex] = useState(0);
-  console.log("from CARROUSEL, currentHouse.title == " + currentHouse.title);
   const nbImages = currentHouse.pictures.length;
   let isUnique = false;
   nbImages > 1 ? (isUnique = false) : (isUnique = true);
@@ -39,6 +38,9 @@ export default function Carrousel({ currentHouse }) {
               src={flecheGauche}
               alt="Précédent"
             />
+            <p className="carrousel-compteur">
+              {`${CurrentIndex + 1} / ${nbImages}`}
+            </p>
             <img
               className="carrousel-fleche-droite"
               onClick={ImageSuivante}

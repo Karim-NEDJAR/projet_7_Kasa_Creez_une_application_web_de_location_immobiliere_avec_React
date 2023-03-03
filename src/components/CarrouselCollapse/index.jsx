@@ -7,7 +7,8 @@ import ListeEquipements from "../../components/ListeEquipements";
 export default function CarrouselCollapse({ currentHouse }) {
   const [isCollapsed, setIsCollapsed] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
-  const coche = isCollapsed ? up : down;
+  const cocheDescription = isCollapsed ? up : down;
+  const cocheEquipements = isOpen ? up : down;
   const altTxt = isCollapsed ? "Masquer le menu" : "Afficher le menu";
   //   const nada = "";
   //   const tableauEquipements = currentHouse.equipments;
@@ -21,7 +22,7 @@ export default function CarrouselCollapse({ currentHouse }) {
             className="haut-bas"
             onClick={() => setIsCollapsed(!isCollapsed)}
           >
-            <img src={coche} alt={altTxt} />
+            <img src={cocheDescription} alt={altTxt} />
           </div>
         </div>
         {isCollapsed && (
@@ -34,7 +35,7 @@ export default function CarrouselCollapse({ currentHouse }) {
         <div className="equipements-bandeau">
           <p className="equipements-bandeau-titre">Équipements</p>
           <div className="haut-ou-bas" onClick={() => setIsOpen(!isOpen)}>
-            <img src={coche} alt={altTxt} />
+            <img src={cocheEquipements} alt={altTxt} />
           </div>
         </div>
         {isOpen && <ListeEquipements equipments={currentHouse.equipments} />}
