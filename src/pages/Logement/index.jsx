@@ -2,13 +2,10 @@ import React from "react";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import Carrousel from "../../components/Carrousel";
-// import Card from "../../components/Card";
 import { useParams, Navigate } from "react-router-dom";
-// import { Redirect } from "react-router";
-let currentHouse = {};
-// let invalide = true;
 
 export default function Logement(props) {
+  let currentHouse = {};
   const { logements } = props;
   const { id } = useParams();
   currentHouse = logements.find((house) => house.id === id);

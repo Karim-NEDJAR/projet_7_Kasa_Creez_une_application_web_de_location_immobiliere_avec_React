@@ -3,20 +3,18 @@ import { useState } from "react";
 import flecheGauche from "../../assets/arrow-left.png";
 import flecheDroite from "../../assets/arrow-right.png";
 import Tags from "../Tags";
-import etoilePleine from "../../assets/etoile-pleine.png";
-import etoileVide from "../../assets/etoile-vide.png";
+import RatingBar from "../RatingBar";
+import HostsCorner from "../HostsCorner";
+import CarrouselCollapse from "../CarrouselCollapse";
 
 export default function Carrousel({ currentHouse }) {
   const [CurrentIndex, setCurrentIndex] = useState(0);
-  // const [isUnique, setIsUnique] = useState();
   console.log("from CARROUSEL, currentHouse.title == " + currentHouse.title);
   const nbImages = currentHouse.pictures.length;
+  let isUnique = false;
+  nbImages > 1 ? (isUnique = false) : (isUnique = true);
   const imageActuelle = currentHouse.pictures[CurrentIndex];
-  const note = currentHouse.rating;
-  let tableauEtoiles = [0, 0, 0, 0, 0];
-  for (let i = 0; i < note; i++) {
-    tableauEtoiles[i] = 1;
-  }
+
   const ImagePrecedente = () => {
     setCurrentIndex(CurrentIndex === 0 ? nbImages - 1 : CurrentIndex - 1);
   };
@@ -33,18 +31,22 @@ export default function Carrousel({ currentHouse }) {
           alt={currentHouse.title}
           title={currentHouse.title}
         />
-        <img
-          className="carrousel-fleche-gauche"
-          onClick={ImagePrecedente}
-          src={flecheGauche}
-          alt="Précédent"
-        />
-        <img
-          className="carrousel-fleche-droite"
-          onClick={ImageSuivante}
-          src={flecheDroite}
-          alt="Suivant"
-        />
+        {!isUnique && (
+          <>
+            <img
+              className="carrousel-fleche-gauche"
+              onClick={ImagePrecedente}
+              src={flecheGauche}
+              alt="Précédent"
+            />
+            <img
+              className="carrousel-fleche-droite"
+              onClick={ImageSuivante}
+              src={flecheDroite}
+              alt="Suivant"
+            />
+          </>
+        )}
       </section>
       <section className="carrousel-infos">
         <div className="carrousel-infos-gauche">
@@ -55,107 +57,13 @@ export default function Carrousel({ currentHouse }) {
           </div>
         </div>
         <div className="carrousel-infos-droite">
-          <div className="carrousel-infos-droite-host">
-            <div className="carrousel-infos-droite-hostname">
-              {currentHouse.host.name}{" "}
-            </div>
-            <div className="carrousel-infos-droite-hostpicture">
-              <img
-                src={currentHouse.host.picture}
-                alt={currentHouse.host.name}
-              />
-            </div>
-          </div>
-          <div className="carrousel-infos-droite-notation">
-            <span>
-              {tableauEtoiles[0] === 1 ? (
-                <img
-                  src={etoilePleine}
-                  alt={
-                    tableauEtoiles[0] === 1 ? "étoile pleine" : "étoile vide"
-                  }
-                />
-              ) : (
-                <img
-                  src={etoileVide}
-                  alt={
-                    tableauEtoiles[0] === 1 ? "étoile pleine" : "étoile vide"
-                  }
-                />
-              )}
-            </span>
-            <span>
-              {tableauEtoiles[0] === 1 ? (
-                <img
-                  src={etoilePleine}
-                  alt={
-                    tableauEtoiles[0] === 1 ? "étoile pleine" : "étoile vide"
-                  }
-                />
-              ) : (
-                <img
-                  src={etoileVide}
-                  alt={
-                    tableauEtoiles[0] === 1 ? "étoile pleine" : "étoile vide"
-                  }
-                />
-              )}
-            </span>
-            <span>
-              {tableauEtoiles[0] === 1 ? (
-                <img
-                  src={etoilePleine}
-                  alt={
-                    tableauEtoiles[0] === 1 ? "étoile pleine" : "étoile vide"
-                  }
-                />
-              ) : (
-                <img
-                  src={etoileVide}
-                  alt={
-                    tableauEtoiles[0] === 1 ? "étoile pleine" : "étoile vide"
-                  }
-                />
-              )}
-            </span>
-            <span>
-              {tableauEtoiles[0] === 1 ? (
-                <img
-                  src={etoilePleine}
-                  alt={
-                    tableauEtoiles[0] === 1 ? "étoile pleine" : "étoile vide"
-                  }
-                />
-              ) : (
-                <img
-                  src={etoileVide}
-                  alt={
-                    tableauEtoiles[0] === 1 ? "étoile pleine" : "étoile vide"
-                  }
-                />
-              )}
-            </span>
-            <span>
-              {tableauEtoiles[0] === 1 ? (
-                <img
-                  src={etoilePleine}
-                  alt={
-                    tableauEtoiles[0] === 1 ? "étoile pleine" : "étoile vide"
-                  }
-                />
-              ) : (
-                <img
-                  src={etoileVide}
-                  alt={
-                    tableauEtoiles[0] === 1 ? "étoile pleine" : "étoile vide"
-                  }
-                />
-              )}
-            </span>
-          </div>
+          <HostsCorner currentHouse={currentHouse} />
+          <RatingBar currentHouse={currentHouse} />
         </div>
       </section>
-      <section className="carrousel-collapse"> collapse</section>
+      <section className="equipements-bandeau-texte">
+        <CarrouselCollapse currentHouse={currentHouse} />{" "}
+      </section>
     </>
   );
 }

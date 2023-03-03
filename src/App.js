@@ -45,7 +45,7 @@ export default function App() {
       <Routes>
         <Route exact path="/" element={<Home logements={logements} />} />
         <Route
-          exact
+          // exact
           path="/Logement/:id"
           element={<Logement logements={logements} />}
         />

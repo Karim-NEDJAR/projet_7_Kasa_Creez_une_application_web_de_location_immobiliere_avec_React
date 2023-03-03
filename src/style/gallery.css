@@ -1,13 +1,13 @@
-.gallery{
-    padding: 50px;
-    width: 100%; /* *1240px;*/
-height: 829px; /*cela engendrera du scrolling*/
-background: #F7F7F7;
-border-radius: 25px;
-display: flex;
-flex-flow: row wrap;
-justify-content: center;
-align-items: flex-start;
-margin-top: 43px;
-overflow: scroll;
+.gallery {
+  padding: 50px;
+  width: 100%; /* *1240px;*/
+  height: 829px; /*cela engendrera du scrolling*/
+  background: #f7f7f7;
+  border-radius: 25px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 43px;
+  overflow: scroll;
 }
