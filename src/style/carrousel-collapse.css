@@ -8,7 +8,7 @@
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: flex-start;
-  background: white;;
+  background: white;
 }
 .description-conteneur,
 .equipements-conteneur {
@@ -21,7 +21,7 @@
 
 /** bandeau  ***/
 .description-bandeau,
-.equipements-bandeau  {
+.equipements-bandeau {
   padding: 15px;
   background: #ff6060;
   border-radius: 5px;
@@ -50,9 +50,8 @@
 .haut-bas,
 .haut-ou-bas {
   width: 14px;
-  height: 23px;  
+  height: 23px;
 }
-
 
 .haut-bas:hover,
 .haut-ou-bas:hover {
@@ -64,8 +63,8 @@
 /**texte du collapse***/
 .description-bandeau-texte,
 .equipements-bandeau-texte {
-  width:100%;
-  padding-left: 10px;  
+  width: 100%;
+  padding-left: 10px;
   background: #f7f7f7;
   border-radius: 10px;
   font-family: "Montserrat";
@@ -75,38 +74,34 @@
   line-height: 142.6%;
   color: #ff6060;
   margin-bottom: 0;
-  }
+}
 /***Chacun des items 
 de la liste   ListeEquipements ***/
 .equipement-liste {
-    width: 100%;   
-} 
+  width: 100%;
+}
 
 /* media queries téléphone ***/
 @media screen and (max-width: 767px) {
-
   .description-conteneur,
   .equipements-conteneur {
-margin-bottom: 20px;
+    margin-bottom: 20px;
     width: 100%;
   }
 
   .description-bandeau-titre,
-.equipements-bandeau-titre {
-  font-size: 13px;
-}
-.haut-bas img,
-.haut-ou-bas img{
-  width: 9px;
-  height: 15px;
-  /* border: 1px solid blue;  */
-}
+  .equipements-bandeau-titre {
+    font-size: 13px;
+  }
+  .haut-bas img,
+  .haut-ou-bas img {
+    width: 9px;
+    height: 15px;
+    /* border: 1px solid blue;  */
+  }
 
-.description-bandeau-texte,
-.equipements-bandeau-texte {
-  font-size: 12px;
+  .description-bandeau-texte,
+  .equipements-bandeau-texte {
+    font-size: 12px;
+  }
 }
-
-
-}
-

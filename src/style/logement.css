@@ -11,12 +11,7 @@
 /******1ère SECTION  contenant le carrousel avec les images défilantes*******/
 section.carrousel-container {
   width: 100%;
-  /* width: calc(
-      (124 / 1.44) * 1vw
-    ); 100% == 1240px soit (100*1240)/1440 ==> + 100*2 (marges) = 1440 == 100vw */
-  height: calc(
-    (415 / 14.4) * 1vw
-  ); /**415px soit en gardant le ratio: 415/14.4 vw **/
+  height: 415px; /*** calc( (415 / 14.4) * 1vw **/
   mix-blend-mode: normal;
   border-radius: 25px;
   margin-top: 20px;
@@ -235,29 +230,30 @@ img.carrousel-fleche-droite {
   padding: 0;
 }
 
-/*Media queries mobile */
+/*********************************
+ Media queries mobile ***********
+ *********************************/
 @media screen and (max-width: 767px) {
-    .carrousel-infos-title {
-        font-size: 18px;
-    }
-
+  .carrousel-infos-title {
+    font-size: 18px;
+  }
 
   .carrousel-infos {
     flex-flow: column nowrap;
     justify-content: flex-start;
     /* align-items: flex-start; */
-      }
-      .carrousel-tag {
-        font-size: 10px;
-        padding: 3px;
-      }
+  }
+  .carrousel-tag {
+    font-size: 10px;
+    padding: 3px;
+  }
 
   .carrousel-infos-gauche {
     max-width: 100%;
   }
   .carrousel-infos-droite {
     max-width: 100%;
-    width:100%;
+    width: 100%;
     flex-flow: row-reverse wrap;
     justify-content: space-between;
     align-items: center;
@@ -266,30 +262,26 @@ img.carrousel-fleche-droite {
   .carrousel-infos-droite-host {
     width: 93px; /* 50%;*/
     height: 64px;
-}
-.carrousel-infos-droite-hostname {
-      margin-right: 5px; 
-      font-size: 12px;
-    }
+  }
+  .carrousel-infos-droite-hostname {
+    margin-right: 5px;
+    font-size: 12px;
+  }
 
-    .carrousel-infos-droite-hostpicture {
-        width: 32px;
-        height: 32px;
-        /* border-radius: 50%; */
-      }
+  .carrousel-infos-droite-hostpicture {
+    width: 32px;
+    height: 32px;
+    /* border-radius: 50%; */
+  }
 
-    
-    .carrousel-infos-droite-notation {
-margin-top: 5px;
-width:49%;
-justify-content: left;
+  .carrousel-infos-droite-notation {
+    margin-top: 5px;
+    width: 49%;
+    justify-content: left;
   }
   .carrousel-infos-droite-notation-etoile {
     width: 15px;
     height: 15px;
     padding: 0;
   }
-
-
-
 }

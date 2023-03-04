@@ -63,10 +63,10 @@
   border-radius: 25px;
 }
 
-/*Media queries TEL & TAB*/
-@media screen and (max-width: 991px) {
+/*Media queries TEL */
+@media screen and (max-width: 767px) {
   .banner {
-    width: 335px;
+    width: 100%; /**335px;*/
     height: 111px;
     border-radius: 10px;
   }
@@ -79,17 +79,14 @@
 
   .banner-img-bg {
     height: 111px;
-        border-radius: 10px;
+    border-radius: 10px;
   }
   .banner-img-bg img {
-        border-radius: 10px;
+    border-radius: 10px;
   }
 
   .banner-background {
-        height: 111px;
-        border-radius: 10px;
+    height: 111px;
+    border-radius: 10px;
   }
-
-
-
 }

@@ -11,7 +11,7 @@
 }
 
 .footer-img-wrapper {
-    width: 122px;
+  width: 122px;
   height: 39.44px;
   margin-top: 66px;
 }
@@ -20,7 +20,7 @@
 .footer p {
   height: 46px;
   width: 100%; /*513px;*/
-  margin: auto 0  29px 0;
+  margin: auto 0 29px 0;
   border-radius: nullpx;
   text-align: center;
   font-family: "Montserrat";
@@ -28,20 +28,19 @@
   font-weight: 500;
   font-size: 24px;
   line-height: 142.6%;
-    color: #ffffff;
+  color: #ffffff;
 }
 
 @media screen and (max-width: 767px) {
-.footer{
-  height: 209px;
-}
+  .footer {
+    height: 209px;
+    margin-top: 20px;
+  }
 
-
-.footer-img-wrapper {
-margin-top: 62px;
-}
-.footer p {
-  font-size: 12px; 
-}
-
+  .footer-img-wrapper {
+    margin-top: 62px;
+  }
+  .footer p {
+    font-size: 12px;
+  }
 }

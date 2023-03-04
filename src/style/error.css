@@ -1,6 +1,6 @@
 .error {
   width: 100%; /*1440px;*/
-  height: 1024px;
+  height: auto; /*1024px;*/
   background: #ffffff;
   display: flex;
   flex-flow: column nowrap;
@@ -46,4 +46,24 @@
   align-items: flex-end;
   text-decoration-line: underline;
   color: #ff6060;
+}
+
+/*Media queries TEL **/
+@media screen and (max-width: 767px) {
+  .error-code {
+    font-size: 96px;
+    width: 100%; /*597px;*/
+    height: 198px;
+    margin-bottom: 11px;
+  }
+
+  .error-msg {
+    font-size: 18px;
+    margin-bottom: 133px;
+    margin-top: 0;
+  }
+  .error-to-home {
+    font-size: 14px;
+    height: 20px;
+  }
 }

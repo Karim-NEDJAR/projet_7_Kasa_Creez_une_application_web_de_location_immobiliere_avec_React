@@ -4,7 +4,6 @@
 }
 /***article**/
 
-
 /** bandeau  du collapse***/
 .engagement {
   padding: 0px 20px;
@@ -59,11 +58,13 @@
   .engagement-titre {
     font-size: 13px;
   }
-  .up-down {
+  .up-down img {
     width: 9px;
     height: 15px;
   }
 
-
-
+  .garantie {
+    font-size: 12px;
+    top: 0;
+  }
 }

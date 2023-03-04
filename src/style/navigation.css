@@ -1,6 +1,6 @@
 .navigation {
   height: 34px; /* si 2.3vw / 21vw alors ratio de 34/309 conservé */
-  width: 309px;    /** 15vw; 309px / 1440px;*/
+  width: 309px; /** 15vw; 309px / 1440px;*/
   border-radius: nullpx;
   display: flex;
   flex-flow: row wrap;
@@ -15,38 +15,32 @@
   font-weight: 500;
   font-size: 24px;
   line-height: 142.6%;
-    color: #ff6060;
+  color: #ff6060;
   text-decoration-line: none;
   cursor: pointer;
 }
 
-
 .navigation-link-about:hover,
 .navigation-link-home:hover {
   text-decoration-line: underline;
-  
 }
-
 
 .navigation-link-about:active,
 .navigation-link-home:active {
   text-decoration-line: underline;
-  font-weight: bold;  
-  text-decoration-thickness: 3px ;
+  font-weight: bold;
+  text-decoration-thickness: 3px;
 }
 
-  /* media queries téléphone ***/
-  @media screen and (max-width: 767px) {
-    .navigation {
-      height: 17px; 
-  width: 140px; 
-    }
-
-    .navigation-link-about,
-    .navigation-link-home {
-      font-size: 12px;
-    }
-
-
-
+/* media queries téléphone ***/
+@media screen and (max-width: 767px) {
+  .navigation {
+    height: 17px;
+    width: 140px;
   }
+
+  .navigation-link-about,
+  .navigation-link-home {
+    font-size: 12px;
+  }
+}
