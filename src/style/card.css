@@ -1,39 +1,41 @@
 /* CARD  */
 .card {
-    margin: 25px;
-    position: relative;
+  margin: 25px;
+  position: relative;
   width: 340px;
   height: 340px;
-background: linear-gradient(
+  background: linear-gradient(
     180deg,
     rgba(255, 255, 255, 0) 0%,
     rgba(0, 0, 0, 0.5) 100%
-  ); 
+  );
   border-radius: 10px;
-  }
+}
 
 .card-cover {
-    position: absolute;
-left: 0%;
-right: 0%;
-top: 0%;
-bottom: 0%;
-background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
-border-radius: 10px;
-background: #ff6060;
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(0, 0, 0, 0.5) 100%
+  );
+  border-radius: 10px;
+  background: #ff6060;
   overflow: hidden;
 }
 
-
 .card img {
-    width:100%;
+  width: 100%;
   object-fit: cover;
-  /* overflow: hidden; */
-   border-radius: 10px;
+  border-radius: 10px;
 }
 
 /* Titre de la location */
-.card-title  {
+.card-title {
   position: absolute;
   left: 5.88%;
   right: 5.88%;
@@ -43,7 +45,7 @@ background: #ff6060;
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
-  line-height: 142.6%;   /* or 26px */
+  line-height: 142.6%; /* or 26px */
   display: flex;
   align-items: flex-end;
   color: #ffffff;

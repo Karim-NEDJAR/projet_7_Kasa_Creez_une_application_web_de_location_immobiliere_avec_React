@@ -30,3 +30,18 @@
   line-height: 142.6%;
     color: #ffffff;
 }
+
+@media screen and (max-width: 767px) {
+.footer{
+  height: 209px;
+}
+
+
+.footer-img-wrapper {
+margin-top: 62px;
+}
+.footer p {
+  font-size: 12px; 
+}
+
+}

@@ -3,9 +3,7 @@
   padding: 0 7%;
 }
 /***article**/
-.offre {
-  
-}
+
 
 /** bandeau  du collapse***/
 .engagement {
@@ -55,4 +53,17 @@
   font-size: 24px;
   line-height: 142.6%;
   color: #ff6060;
+}
+
+@media screen and (max-width: 767px) {
+  .engagement-titre {
+    font-size: 13px;
+  }
+  .up-down {
+    width: 9px;
+    height: 15px;
+  }
+
+
+
 }

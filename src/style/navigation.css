@@ -15,10 +15,7 @@
   font-weight: 500;
   font-size: 24px;
   line-height: 142.6%;
-  /* display: flex;
-  align-items: flex-end;
-  text-align: right; */
-  color: #ff6060;
+    color: #ff6060;
   text-decoration-line: none;
   cursor: pointer;
 }
@@ -38,4 +35,18 @@
   text-decoration-thickness: 3px ;
 }
 
+  /* media queries téléphone ***/
+  @media screen and (max-width: 767px) {
+    .navigation {
+      height: 17px; 
+  width: 140px; 
+    }
 
+    .navigation-link-about,
+    .navigation-link-home {
+      font-size: 12px;
+    }
+
+
+
+  }
