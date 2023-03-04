@@ -105,7 +105,7 @@ contenant 3 éléments:
   align-items: flex-end;
   color: #ff6060;
 }
-
+/**  location ***/
 .carrousel-infos-location {
   font-family: Montserrat;
   font-size: 18px;
@@ -177,6 +177,7 @@ contenant le hostname + hostpicture**/
   width: 100%;
   height: auto;
 }
+/*** hostname ****/
 .carrousel-infos-droite-hostname {
     font-family: "Montserrat";
     font-style: normal;
@@ -191,7 +192,7 @@ contenant le hostname + hostpicture**/
     height: 100%; /**52px;  **/
        
 }
-
+/*** hostpicture ****/
 .carrousel-infos-droite-hostpicture {
   background: #c4c4c4;
   width: 64px;
@@ -199,6 +200,7 @@ contenant le hostname + hostpicture**/
   border-radius: 50%;
   /* position: relative; */
 }
+/*** hostpicture img ****/
 .carrousel-infos-droite-hostpicture img {
   width: 100%;
   height: 100%;

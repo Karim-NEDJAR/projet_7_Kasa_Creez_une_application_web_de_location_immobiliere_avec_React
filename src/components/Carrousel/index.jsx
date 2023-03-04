@@ -13,7 +13,6 @@ export default function Carrousel({ currentHouse }) {
   let isUnique = false;
   nbImages > 1 ? (isUnique = false) : (isUnique = true);
   const imageActuelle = currentHouse.pictures[CurrentIndex];
-
   const ImagePrecedente = () => {
     setCurrentIndex(CurrentIndex === 0 ? nbImages - 1 : CurrentIndex - 1);
   };

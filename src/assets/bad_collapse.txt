@@ -1,0 +1,45 @@
+//ancien fichier collapse.jsx :
+// ce code faisait que tous les collapses se dépliaient  ou se rétractaient en même temps
+
+import React from "react";
+import offres from "../../assets/services.json";
+import haut from "../../assets/arrow-up.png";
+import bas from "../../assets/arrow-down.png";
+import { useState } from "react";
+
+export default function Collapse() {
+  const [collapsed, setCollapsed] = useState(false);
+  const nothing = "";
+
+  return (
+    <section className="collapse">
+      {offres &&
+        offres.map((offre, index) => {
+          return (
+            <article className="offre" key={index}>
+              <div className="engagement">
+                <p className="engagement-titre"> {offre.engagement} </p>
+                <div
+                  className="up-down"
+                  onClick={() => setCollapsed(!collapsed)}
+                >
+                  <img
+                    src={collapsed ? haut : bas}
+                    alt={collapsed ? "Masquer" : "Afficher"}
+                    title={collapsed ? "Masquer" : "Afficher"}
+                  />
+                </div>
+              </div>
+              {collapsed ? (
+                <p className="garantie">
+                  <br /> {offre.garantie}
+                </p>
+              ) : (
+                <p className="garantie"> {nothing}</p>
+              )}
+            </article>
+          );
+        })}
+    </section>
+  );
+}
